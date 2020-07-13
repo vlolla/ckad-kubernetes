@@ -18,7 +18,7 @@ A simple case is to create one ReplicationController object to reliably run one 
 
 ## Running an example ReplicationController 
 
-./examples/replication.yaml 
+./examples/replication-definition.yaml 
 ```
 apiVersion: v1
 kind: ReplicationController
@@ -28,21 +28,22 @@ metadata:
       app: myapp
       type: front-end
 spec:
-  metadata:
-  name: myapp-pod
-  labels:
-      app: myapp
-  spec:
-    containers:
-      - name: nginx-container
-        image: nginx
- 
- replicas: 3
+  template:
+    metadata:
+      name: myapp-pod
+      labels:
+        app: myapp
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx
+  replicas: 3
 ```
 Run the example job by downloading the example file under examples and then running this command:
 
 ```
-kubectl create -f replication-definition.yml
+ubuntu@ubuntu-V5-171:~/github/kubernetes/examples$ kubectl create -f replication-definition.yml
+replicationcontroller/myapp-rc created
 ```
 
 Check on the status of the ReplicationController using this command:
@@ -50,11 +51,26 @@ Check on the status of the ReplicationController using this command:
 ```
 kubectl get replicationcontroller
 ```
+```
+ubuntu@ubuntu-V5-171:~/github/kubernetes/examples$ kubectl get rc
+NAME       DESIRED   CURRENT   READY   AGE
+myapp-rc   3         3         3       2m11s
+```
+
+Three replicas has been created.
 
 To know how may pods are running
 
 ```
 kubectl get pods
+```
+
+```
+ubuntu@ubuntu-V5-171:~/github/kubernetes/examples$ kubectl get pods
+NAME             READY   STATUS    RESTARTS   AGE
+myapp-rc-7mpn4   1/1     Running   0          3m11s
+myapp-rc-f7kt7   1/1     Running   0          3m11s
+myapp-rc-pmrx2   1/1     Running   0          3m11s
 ```
 
 
@@ -92,14 +108,13 @@ kind : ReplicaSet
 metadata:
   name: myapp-replicaset
   labels:
-      app: myapp
-      type: front-end
+    app: myapp
+    type: myapp-replicaset
 spec:
-    template:
-      metadata:
-      name: myapp-pod
+  template:
+    metadata:
       labels:
-        app: myapp
+        tier: myapp-replicaset
     spec:
       containers:
         - name: nginx-container
@@ -107,28 +122,43 @@ spec:
   replicas: 3
   selector: 
     matchLabels:
-        type: front-end
-        
+      tier: myapp-replicaset
+          
   ```
   
  To create a Replica set run below command
  
  ```
- kubectl create -f replicaset-definition.yml
+ ubuntu@ubuntu-V5-171:~/github/kubernetes/examples$ kubectl create -f replicaset-definition.yml
+replicaset.apps/myapp-replicaset created
  ```
- 
+
  Check if the replicaset is created
  
  ```
- kubectl get replicaset
+ubuntu@ubuntu-V5-171:~/github/kubernetes/examples$ kubectl get rs
+NAME               DESIRED   CURRENT   READY   AGE
+myapp-replicaset   3         3         3       101s
  ```
  
  To get PODS
  
  ```
  kubectl get pods
+
+ ubuntu@ubuntu-V5-171:~/github/kubernetes/examples$ kubectl get pods
+NAME                     READY   STATUS    RESTARTS   AGE
+myapp-rc-7mpn4           1/1     Running   0          14m
+myapp-rc-f7kt7           1/1     Running   0          14m
+myapp-rc-pmrx2           1/1     Running   0          14m
+myapp-replicaset-glxq4   1/1     Running   0          2m
+myapp-replicaset-kl9tr   1/1     Running   0          2m
+myapp-replicaset-vxhz9   1/1     Running   0          2m
  ```
  
+ Total Six pods has been created with Replication Controller and Replica Set.
+
+
  For more information on replica set refer URL https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
  
  ## Labels and Selectors
@@ -157,13 +187,39 @@ spec:
   ```
   kubectl scale --replicas=6 -f replicaset-definition.yml
   ```
+  
   or
   ```
   kubectl scale --replicas=6 replicaset myapp-replicaset
   ```
-  
+Output for all three commands
+  ```
+
+  replicaset.apps/myapp-replicaset scaled
+  ```
  Important: Scale command wont update your yml file.
  
+## Delete Replica Set
+
+```
+ubuntu@ubuntu-V5-171:~/github/kubernetes/examples$ kubectl delete replicaset myapp-replicaset
+```
+Output:
+```
+replicaset.apps "myapp-replicaset" deleted
+```
+
+## Delete Replication controller
+
+```
+ubuntu@ubuntu-V5-171:~/github/kubernetes/examples$ kubectl delete rc myapp-rc
+
+replicationcontroller "myapp-rc" deleted
+
+```
+
+Delete Replication Controller myapp-rc and all the unlying pods.
+
  ## Commands We learned in this section
  
  ```
@@ -184,3 +240,6 @@ spec:
  
  Link to practice tests:
  https://kodekloud.com/courses/kubernetes-certification-course-labs/lectures/12039431
+
+Solution : https://youtu.be/Y2SA7sCtKSs
+

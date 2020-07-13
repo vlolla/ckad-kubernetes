@@ -4,6 +4,7 @@
 Pod, the smallest deployable object in the Kubernetes object model.
 
 Please refer for more information https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/
+https://kubernetes.io/docs/concepts/workloads/pods/
 
 Note: Restarting a container in a Pod should not be confused with restarting a Pod. A Pod is not a process, but an environment for running a container. A Pod persists until it is deleted.
 

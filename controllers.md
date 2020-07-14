@@ -235,6 +235,11 @@ Delete Replication Controller myapp-rc and all the unlying pods.
  
  ```
  
+If we would like to take the definition of Replica Set as we dont have yaml file. Run the below command
+
+```
+kubectl get rs <<replicaset>> -o yaml > <<filename>>
+
  
  ```
  

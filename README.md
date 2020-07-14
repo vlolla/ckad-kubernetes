@@ -1,6 +1,6 @@
 # K8 Tutorial and Exam Prep
 
-## Core Concepts
+## Core Concepts 13%
 
 * [Minikube and Kubectl Setup](https://github.com/vlolla/kubernetes/blob/master/notes/coreconcepts/minikube-kubectl-setup.md)
 * [Minikube Start](https://github.com/vlolla/kubernetes/blob/master/notes/coreconcepts/minikube-start.md)
@@ -11,24 +11,26 @@
 * [Certification Tips!](https://github.com/vlolla/kubernetes/blob/master/notes/CertificationTips.md)
 * [Examples Definition YML](https://github.com/vlolla/kubernetes/tree/master/examples)
 
-## Configuration
+## Configuration 18%
 
 * [Commands & Arguments]
 
-## Multi Container PODs
+## Multi Container PODs 10%
 
-## Observability
+## Observability 18%
 
-## POD Design
+## POD Design 20%
 
-## Services & Networking
+## Services & Networking 13%
 
-## State Persistence
+## State Persistence 8%
 
 ## 
 
 # Tips & Tricks Links
 
+
+Tasks would help to prepare for 
 All -> https://kubernetes.io/docs/tasks/debug-application-cluster/
 
 https://kubernetes.io/docs/tasks/debug-application-cluster/debug-service/

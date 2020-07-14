@@ -2,12 +2,12 @@
 
 ## Core Concepts
 
-* [Minikube and Kubectl Setup](https://github.com/vlolla/kubernetes/blob/master/notes/minikube-kubectl-setup.md)
-* [Minikube Start](https://github.com/vlolla/kubernetes/blob/master/notes/minikube-start.md)
-* [Configuring PODS](https://github.com/vlolla/kubernetes/blob/master/notes/cofiguringpods.md)
-* [Controllers](https://github.com/vlolla/kubernetes/blob/master/notes/controllers.md)
-* [Deployment](https://github.com/vlolla/kubernetes/blob/master/notes/deployment.md)
-* [Namespaces](https://github.com/vlolla/kubernetes/blob/master/notes/namespaces.md)
+* [Minikube and Kubectl Setup](https://github.com/vlolla/kubernetes/blob/master/notes/coreconcepts/minikube-kubectl-setup.md)
+* [Minikube Start](https://github.com/vlolla/kubernetes/blob/master/notes/coreconcepts/minikube-start.md)
+* [Configuring PODS](https://github.com/vlolla/kubernetes/blob/master/notes/coreconcepts/cofiguringpods.md)
+* [Controllers](https://github.com/vlolla/kubernetes/blob/master/notes/coreconcepts/controllers.md)
+* [Deployment](https://github.com/vlolla/kubernetes/blob/master/notes/coreconcepts/deployment.md)
+* [Namespaces](https://github.com/vlolla/kubernetes/blob/master/notes/coreconcepts/namespaces.md)
 * [Certification Tips!](https://github.com/vlolla/kubernetes/blob/master/notes/CertificationTips.md)
 * [Examples Definition YML](https://github.com/vlolla/kubernetes/tree/master/examples)
 

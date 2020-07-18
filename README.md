@@ -13,10 +13,12 @@
 
 ## Configuration 18%
 
-* [Commands & Arguments]
-* [Environment Variables]
-* [Config Maps]
-* [Secrets]
+* [Commands & Arguments](https://github.com/vlolla/kubernetes/blob/master/notes/configuration/commands.md)
+* [Environment Variables](https://github.com/vlolla/kubernetes/blob/master/notes/configuration/env-variables.md)
+* [Config Maps](https://github.com/vlolla/kubernetes/blob/master/notes/configuration/configmaps.md)
+* [Secrets](https://github.com/vlolla/kubernetes/blob/master/notes/configuration/secrets.md)
+* [Security Context]()
+
 
 ## Multi Container PODs 10%
 

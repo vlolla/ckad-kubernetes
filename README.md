@@ -16,6 +16,7 @@
 * [Commands & Arguments]
 * [Environment Variables]
 * [Config Maps]
+* [Secrets]
 
 ## Multi Container PODs 10%
 

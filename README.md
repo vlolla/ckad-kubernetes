@@ -4,7 +4,7 @@ Kubectl Kubernetes Free CheatSheet -- Thanks to Denny Zhang
 
 https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4
 
-Documented Tips and Tricks click [here]()
+Documented Tips and Tricks click [here](https://github.com/vlolla/kubernetes/blob/master/learningmaterialandtips.md)
 
 ## Core Concepts 13%
 

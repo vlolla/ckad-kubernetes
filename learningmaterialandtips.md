@@ -75,7 +75,6 @@ volumeattachments                              storage.k8s.io                 fa
 
 Most important are these.
 ```
-
     no for nodes
     po for pods
     deploy for deployments
@@ -84,8 +83,6 @@ Most important are these.
     pvc for persitentvolumeclaims
     ns for namespaces
     rc for replicationcontroller
-
-
 ```
 
 4. Create shortcuts/alias before you start the exam
@@ -139,9 +136,9 @@ kubectl config set-context --current --namespace=<insert-namespace-name-here>
 ```
 ubuntu@ubuntu-V5-171:~/github$ k config set-context --current --namespace=myns
 Context "minikube" modified.
-```
-```
+
 ubuntu@ubuntu-V5-171:~/github$ kubectl get pod ngnix -o yaml > ngnixpod.yaml
+```
 
 Once you have the ngnixpod.yaml we can use it to change for any question we have in the test
 
@@ -302,3 +299,4 @@ status:
   qosClass: BestEffort
   startTime: "2020-07-19T22:08:57Z"
 ubuntu@ubuntu-V5-171:~/github$ 
+```

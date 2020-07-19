@@ -17,7 +17,9 @@
 * [Environment Variables](https://github.com/vlolla/kubernetes/blob/master/notes/configuration/env-variables.md)
 * [Config Maps](https://github.com/vlolla/kubernetes/blob/master/notes/configuration/configmaps.md)
 * [Secrets](https://github.com/vlolla/kubernetes/blob/master/notes/configuration/secrets.md)
-* [Security Context]()
+* [Security Context](https://github.com/vlolla/kubernetes/blob/master/notes/configuration/securitycontext.md)
+* [Service Account]()
+
 
 
 ## Multi Container PODs 10%

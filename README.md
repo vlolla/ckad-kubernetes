@@ -1,5 +1,11 @@
 # K8 Tutorial and Exam Prep
 
+Kubectl Kubernetes Free CheatSheet -- Thanks to Denny Zhang
+
+https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4
+
+Documented Tips and Tricks click [here]()
+
 ## Core Concepts 13%
 
 * [Minikube and Kubectl Setup](https://github.com/vlolla/kubernetes/blob/master/notes/coreconcepts/minikube-kubectl-setup.md)

@@ -1,5 +1,10 @@
 # K8 Tutorial and Exam Prep
 
+Important Information about Certification
+
+https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad
+
+
 Kubectl Kubernetes Free CheatSheet -- Thanks to Denny Zhang
 
 https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4
@@ -24,7 +29,10 @@ Documented Tips and Tricks click [here](https://github.com/vlolla/kubernetes/blo
 * [Config Maps](https://github.com/vlolla/kubernetes/blob/master/notes/configuration/configmaps.md)
 * [Secrets](https://github.com/vlolla/kubernetes/blob/master/notes/configuration/secrets.md)
 * [Security Context](https://github.com/vlolla/kubernetes/blob/master/notes/configuration/securitycontext.md)
+* [Resource Limits]()
 * [Service Account]()
+* [Tains & Tolerants]()
+* 
 
 
 

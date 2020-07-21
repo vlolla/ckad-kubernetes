@@ -32,9 +32,7 @@ Documented Tips and Tricks click [here](https://github.com/vlolla/kubernetes/blo
 * [Resource Limits]()
 * [Service Account]()
 * [Tains & Tolerants]()
-* 
-
-
+* [Node Selector & Affinity]()
 
 ## Multi Container PODs 10%
 

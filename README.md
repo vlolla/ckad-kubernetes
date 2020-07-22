@@ -36,7 +36,13 @@ Documented Tips and Tricks click [here](https://github.com/vlolla/kubernetes/blo
 
 ## Multi Container PODs 10%
 
+* Ambassador
+* Adapter
+* Sidecar
+
 ## Observability 18%
+
+* Readiness Probes
 
 ## POD Design 20%
 
@@ -55,3 +61,16 @@ All -> https://kubernetes.io/docs/tasks/debug-application-cluster/
 https://kubernetes.io/docs/tasks/debug-application-cluster/debug-service/
 https://kubernetes.io/docs/tasks/debug-application-cluster/debug-application-introspection/
 https://kubernetes.io/docs/tasks/debug-application-cluster/determine-reason-pod-failure/
+
+
+******
+
+## Certification Tips - Student Tips
+
+Make sure you check out these tips and tricks from other students who have cleared the exam:
+
+https://www.linkedin.com/pulse/my-ckad-exam-experience-atharva-chauthaiwale/
+
+https://medium.com/@harioverhere/ckad-certified-kubernetes-application-developer-my-journey-3afb0901014
+
+https://github.com/lucassha/CKAD-resources

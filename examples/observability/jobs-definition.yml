@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: throw-dice-job
+spec:
+  backoffLimit: 15 # This is so the job does not quit before it succeeds.
+  template:
+    spec:
+      containers:
+      - name: math-add
+        image: kodekloud/throw-dice
+      restartPolicy: Never

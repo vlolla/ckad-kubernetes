@@ -55,3 +55,70 @@ spec:
             image: kodekloud/throw-dice
           restartPolicy: Never
   ```
+
+## Commands in Job and Cron Job
+
+```
+kubectl create –f job-definition.yaml
+
+kubectl get jobs
+
+kubectl explain job
+
+kubectl delete job-name
+
+kubectl create -f cronjob-definition.yaml
+
+kubectl get cronjobs
+
+kubectl delete cronjobs-name
+
+```
+
+## Completions & Parallalism
+
+### Multiple Pods
+
+To run multiple pods with in the job defenition use the completion attribue in job definition file as given below
+
+```
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: throw-dice-job
+spec:
+  completions: 3
+  backoffLimit: 25 # This is so the job does not quit before it succeeds.
+  template:
+    spec:
+      containers:
+      - name: math-add
+        image: kodekloud/throw-dice
+      restartPolicy: Nevermaster $
+```
+
+## Parallalism
+
+Instead of getting the pods created sequentially we can get them created in parallel.
+For this add a property called parallelism to the job specification. We set it to 3 to
+create 3 pods in parallel. So the job first creates 3 pods at once. Two of which
+completes successfully. So we only need one more, so it’s intelligent enough to create
+one pod at a time until we get a total of 3 completed pods.
+
+
+```
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: throw-dice-job
+spec:
+  completions: 3
+  parallalism: 3
+  backoffLimit: 25 # This is so the job does not quit before it succeeds.
+  template:
+    spec:
+      containers:
+      - name: math-add
+        image: kodekloud/throw-dice
+      restartPolicy: Never
+```

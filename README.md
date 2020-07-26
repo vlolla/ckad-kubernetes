@@ -1,5 +1,5 @@
 # K8 Tutorial and Exam Prep
-
+  
 Important Information about Certification
 
 https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad
@@ -29,24 +29,39 @@ Documented Tips and Tricks click [here](https://github.com/vlolla/kubernetes/blo
 * [Config Maps](https://github.com/vlolla/kubernetes/blob/master/notes/configuration/configmaps.md)
 * [Secrets](https://github.com/vlolla/kubernetes/blob/master/notes/configuration/secrets.md)
 * [Security Context](https://github.com/vlolla/kubernetes/blob/master/notes/configuration/securitycontext.md)
-* [Resource Limits]()
-* [Service Account]()
-* [Tains & Tolerants]()
-* [Node Selector & Affinity]()
+* [Resource Limits](https://github.com/vlolla/kubernetes/blob/master/notes/configuration/resourcelimits.md)
+* [Service Account](https://github.com/vlolla/kubernetes/blob/master/notes/configuration/serviceaccount.md)
+* [Tains & Tolerants](https://github.com/vlolla/kubernetes/blob/master/notes/configuration/serviceaccount.md)
+* [Node Selector & Affinity](https://github.com/vlolla/kubernetes/blob/master/notes/configuration/nodeselectors.md)
 
 ## Multi Container PODs 10%
 
-* Ambassador
-* Adapter
-* Sidecar
+* [Containers](https://github.com/vlolla/kubernetes/blob/master/notes/multicontainerpods/multicontainerpods.md)
+    * Ambassador
+    * Adapter
+    * Sidecar
 
 ## Observability 18%
 
-* Readiness Probes
+* [Readiness Probes](https://github.com/vlolla/kubernetes/blob/master/notes/observability/readinessprobes.md)
+* [Logging](https://github.com/vlolla/kubernetes/blob/master/notes/observability/logging.md)
+* [Jobs & CronJobs](https://github.com/vlolla/kubernetes/blob/master/notes/observability/jobs.md)
+* [Monitoring](https://github.com/vlolla/kubernetes/blob/master/notes/observability/monitoring.md)
+* [Rolling Updates](https://github.com/vlolla/kubernetes/blob/master/notes/observability/rollingupdates.md)
 
 ## POD Design 20%
 
+* [Lables & Selectors](https://github.com/vlolla/kubernetes/blob/master/notes/poddesign/labels%26selectors.md)
+
+
 ## Services & Networking 13%
+
+* [Services](https://github.com/vlolla/kubernetes/blob/master/notes/services%26networking/services.md)
+* [Ingress](https://github.com/vlolla/kubernetes/blob/master/notes/services%26networking/ingress.md)
+* [Networking]()
+
+
+
 
 ## State Persistence 8%
 

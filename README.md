@@ -1,6 +1,10 @@
-# K8 Tutorial and Exam Prep
+# Kubernetes Tutorial and CKAD Exam Prep
   
-Important Information about Certification
+### Certified Kubernetes Application Developer (CKAD) Exam Curriculam
+
+https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_V1.18.pdf
+
+### Important Information about Certification
 
 https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad
 
@@ -10,6 +14,8 @@ Kubectl Kubernetes Free CheatSheet -- Thanks to Denny Zhang
 https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4
 
 Documented Tips and Tricks click [here](https://github.com/vlolla/kubernetes/blob/master/learningmaterialandtips.md)
+
+
 
 ## Core Concepts 13%
 
@@ -45,12 +51,13 @@ Documented Tips and Tricks click [here](https://github.com/vlolla/kubernetes/blo
 
 * [Readiness Probes](https://github.com/vlolla/kubernetes/blob/master/notes/observability/readinessprobes.md)
 * [Logging](https://github.com/vlolla/kubernetes/blob/master/notes/observability/logging.md)
-* [Jobs & CronJobs](https://github.com/vlolla/kubernetes/blob/master/notes/observability/jobs.md)
 * [Monitoring](https://github.com/vlolla/kubernetes/blob/master/notes/observability/monitoring.md)
-* [Rolling Updates](https://github.com/vlolla/kubernetes/blob/master/notes/observability/rollingupdates.md)
+
 
 ## POD Design 20%
 
+* [Rolling Updates](https://github.com/vlolla/kubernetes/blob/master/notes/observability/rollingupdates.md)
+* [Jobs & CronJobs](https://github.com/vlolla/kubernetes/blob/master/notes/observability/jobs.md)
 * [Lables & Selectors](https://github.com/vlolla/kubernetes/blob/master/notes/poddesign/labels%26selectors.md)
 
 
@@ -58,12 +65,14 @@ Documented Tips and Tricks click [here](https://github.com/vlolla/kubernetes/blo
 
 * [Services](https://github.com/vlolla/kubernetes/blob/master/notes/services%26networking/services.md)
 * [Ingress](https://github.com/vlolla/kubernetes/blob/master/notes/services%26networking/ingress.md)
-* [Networking]()
-
-
+* [Network Policies](https://github.com/vlolla/kubernetes/blob/master/notes/services%26networking/network-policies.md)
 
 
 ## State Persistence 8%
+
+* Volume
+* Persistent Volume
+* [Persistent volume Claims](https://github.com/vlolla/kubernetes/blob/master/notes/persistence/persistentvolumes.md)
 
 ## 
 
@@ -71,10 +80,13 @@ Documented Tips and Tricks click [here](https://github.com/vlolla/kubernetes/blo
 
 
 Tasks would help to prepare for 
-All -> https://kubernetes.io/docs/tasks/debug-application-cluster/
+All -> 
+https://kubernetes.io/docs/tasks/debug-application-cluster/
 
 https://kubernetes.io/docs/tasks/debug-application-cluster/debug-service/
+
 https://kubernetes.io/docs/tasks/debug-application-cluster/debug-application-introspection/
+
 https://kubernetes.io/docs/tasks/debug-application-cluster/determine-reason-pod-failure/
 
 

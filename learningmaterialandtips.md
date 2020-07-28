@@ -7,11 +7,14 @@ Learn concepts and practice for the Kubernetes Certification with hands-on labs 
 3. Kubernetes Learning Path which can be download [here](https://azure.microsoft.com/en-us/resources/kubernetes-learning-path/). It has 50 days from zero to hero learning plan, including videos, hands-on, documentation, etc. It cover the basic Kubernetes concept and uses [Azure Kubernetes Services](https://azure.microsoft.com/en-us/services/kubernetes-service/) as example. The content used in this learning path is mostly free. 
 4. [CKAD Exercise](https://github.com/dgkanatsios/CKAD-exercises) nice repo for few exercises help to be fluent with the exam pattern.
 
+5. More Exercises from https://medium.com/bb-tutorials-and-thoughts/practice-enough-with-these-questions-for-the-ckad-exam-2f42d1228552
+
 # Tips of passing the exam
 
 1. vi editor fluency and practice
 
 2. Kubernetes docs (https://kubernetes.io ) especially the example. Get familiar with the structure of the docs including the examples. So that you can copy-paste the appropriate example to your terminal with minimum modification.  
+
 3. Familiar with Kubernetes’ object’s short names
 
 ```
